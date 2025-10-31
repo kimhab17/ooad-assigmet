@@ -42,7 +42,7 @@
             this.label1.BackColor = System.Drawing.Color.Transparent;
             this.label1.Font = new System.Drawing.Font("Poppins", 22.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.ForeColor = System.Drawing.Color.Blue;
-            this.label1.Location = new System.Drawing.Point(527, 21);
+            this.label1.Location = new System.Drawing.Point(648, 80);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(131, 65);
             this.label1.TabIndex = 0;
@@ -53,7 +53,7 @@
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Poppins", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label2.ForeColor = System.Drawing.Color.Navy;
-            this.label2.Location = new System.Drawing.Point(301, 119);
+            this.label2.Location = new System.Drawing.Point(422, 178);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(137, 40);
             this.label2.TabIndex = 1;
@@ -62,7 +62,7 @@
             // txtUsername
             // 
             this.txtUsername.Font = new System.Drawing.Font("Poppins", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtUsername.Location = new System.Drawing.Point(308, 162);
+            this.txtUsername.Location = new System.Drawing.Point(429, 221);
             this.txtUsername.Name = "txtUsername";
             this.txtUsername.Size = new System.Drawing.Size(566, 42);
             this.txtUsername.TabIndex = 2;
@@ -70,7 +70,7 @@
             // txtPassword
             // 
             this.txtPassword.Font = new System.Drawing.Font("Poppins", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtPassword.Location = new System.Drawing.Point(312, 277);
+            this.txtPassword.Location = new System.Drawing.Point(433, 336);
             this.txtPassword.Name = "txtPassword";
             this.txtPassword.Size = new System.Drawing.Size(566, 42);
             this.txtPassword.TabIndex = 4;
@@ -80,7 +80,7 @@
             this.label3.AutoSize = true;
             this.label3.Font = new System.Drawing.Font("Poppins", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label3.ForeColor = System.Drawing.Color.Navy;
-            this.label3.Location = new System.Drawing.Point(305, 234);
+            this.label3.Location = new System.Drawing.Point(426, 293);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(129, 40);
             this.label3.TabIndex = 3;
@@ -91,7 +91,7 @@
             this.btnLogin.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(192)))));
             this.btnLogin.Font = new System.Drawing.Font("Poppins", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnLogin.ForeColor = System.Drawing.Color.White;
-            this.btnLogin.Location = new System.Drawing.Point(469, 355);
+            this.btnLogin.Location = new System.Drawing.Point(590, 414);
             this.btnLogin.Name = "btnLogin";
             this.btnLogin.Size = new System.Drawing.Size(216, 52);
             this.btnLogin.TabIndex = 5;
@@ -104,7 +104,7 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.WhiteSmoke;
-            this.ClientSize = new System.Drawing.Size(1182, 553);
+            this.ClientSize = new System.Drawing.Size(1382, 703);
             this.Controls.Add(this.btnLogin);
             this.Controls.Add(this.txtPassword);
             this.Controls.Add(this.label3);

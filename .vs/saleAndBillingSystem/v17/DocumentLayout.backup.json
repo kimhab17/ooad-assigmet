@@ -3,24 +3,68 @@
   "WorkspaceRootPath": "C:\\Users\\MSI\\Desktop\\RUPP-Y4\\OOAD\\project\\saleAndBillingSystem\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{B31634E9-BD73-456C-9C4B-D100A12D7F5D}|saleAndBillingSystem\\saleAndBillingSystem.csproj|c:\\users\\msi\\desktop\\rupp-y4\\ooad\\project\\saleandbillingsystem\\saleandbillingsystem\\adminform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "AbsoluteMoniker": "D:0:0:{B31634E9-BD73-456C-9C4B-D100A12D7F5D}|saleAndBillingSystem\\saleAndBillingSystem.csproj|c:\\users\\msi\\desktop\\rupp-y4\\ooad\\project\\saleandbillingsystem\\saleandbillingsystem\\user.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{B31634E9-BD73-456C-9C4B-D100A12D7F5D}|saleAndBillingSystem\\saleAndBillingSystem.csproj|solutionrelative:saleandbillingsystem\\user.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B31634E9-BD73-456C-9C4B-D100A12D7F5D}|saleAndBillingSystem\\saleAndBillingSystem.csproj|C:\\Users\\MSI\\Desktop\\RUPP-Y4\\OOAD\\project\\saleAndBillingSystem\\saleandbillingsystem\\adminform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
       "RelativeMoniker": "D:0:0:{B31634E9-BD73-456C-9C4B-D100A12D7F5D}|saleAndBillingSystem\\saleAndBillingSystem.csproj|solutionrelative:saleandbillingsystem\\adminform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{B31634E9-BD73-456C-9C4B-D100A12D7F5D}|saleAndBillingSystem\\saleAndBillingSystem.csproj|c:\\users\\msi\\desktop\\rupp-y4\\ooad\\project\\saleandbillingsystem\\saleandbillingsystem\\cashierform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{B31634E9-BD73-456C-9C4B-D100A12D7F5D}|saleAndBillingSystem\\saleAndBillingSystem.csproj|solutionrelative:saleandbillingsystem\\cashierform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+      "AbsoluteMoniker": "D:0:0:{B31634E9-BD73-456C-9C4B-D100A12D7F5D}|saleAndBillingSystem\\saleAndBillingSystem.csproj|C:\\Users\\MSI\\Desktop\\RUPP-Y4\\OOAD\\project\\saleAndBillingSystem\\saleandbillingsystem\\adminform.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B31634E9-BD73-456C-9C4B-D100A12D7F5D}|saleAndBillingSystem\\saleAndBillingSystem.csproj|solutionrelative:saleandbillingsystem\\adminform.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{B31634E9-BD73-456C-9C4B-D100A12D7F5D}|saleAndBillingSystem\\saleAndBillingSystem.csproj|c:\\users\\msi\\desktop\\rupp-y4\\ooad\\project\\saleandbillingsystem\\saleandbillingsystem\\loginform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "AbsoluteMoniker": "D:0:0:{B31634E9-BD73-456C-9C4B-D100A12D7F5D}|saleAndBillingSystem\\saleAndBillingSystem.csproj|C:\\Users\\MSI\\Desktop\\RUPP-Y4\\OOAD\\project\\saleAndBillingSystem\\saleandbillingsystem\\loginform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
       "RelativeMoniker": "D:0:0:{B31634E9-BD73-456C-9C4B-D100A12D7F5D}|saleAndBillingSystem\\saleAndBillingSystem.csproj|solutionrelative:saleandbillingsystem\\loginform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{B31634E9-BD73-456C-9C4B-D100A12D7F5D}|saleAndBillingSystem\\saleAndBillingSystem.csproj|c:\\users\\msi\\desktop\\rupp-y4\\ooad\\project\\saleandbillingsystem\\saleandbillingsystem\\loginform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{B31634E9-BD73-456C-9C4B-D100A12D7F5D}|saleAndBillingSystem\\saleAndBillingSystem.csproj|C:\\Users\\MSI\\Desktop\\RUPP-Y4\\OOAD\\project\\saleAndBillingSystem\\saleandbillingsystem\\adminform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B31634E9-BD73-456C-9C4B-D100A12D7F5D}|saleAndBillingSystem\\saleAndBillingSystem.csproj|solutionrelative:saleandbillingsystem\\adminform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B31634E9-BD73-456C-9C4B-D100A12D7F5D}|saleAndBillingSystem\\saleAndBillingSystem.csproj|C:\\Users\\MSI\\Desktop\\RUPP-Y4\\OOAD\\project\\saleAndBillingSystem\\saleandbillingsystem\\dashboard.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B31634E9-BD73-456C-9C4B-D100A12D7F5D}|saleAndBillingSystem\\saleAndBillingSystem.csproj|solutionrelative:saleandbillingsystem\\dashboard.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B31634E9-BD73-456C-9C4B-D100A12D7F5D}|saleAndBillingSystem\\saleAndBillingSystem.csproj|C:\\Users\\MSI\\Desktop\\RUPP-Y4\\OOAD\\project\\saleAndBillingSystem\\saleandbillingsystem\\dashboard.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{B31634E9-BD73-456C-9C4B-D100A12D7F5D}|saleAndBillingSystem\\saleAndBillingSystem.csproj|solutionrelative:saleandbillingsystem\\dashboard.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B31634E9-BD73-456C-9C4B-D100A12D7F5D}|saleAndBillingSystem\\saleAndBillingSystem.csproj|C:\\Users\\MSI\\Desktop\\RUPP-Y4\\OOAD\\project\\saleAndBillingSystem\\saleandbillingsystem\\loginform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{B31634E9-BD73-456C-9C4B-D100A12D7F5D}|saleAndBillingSystem\\saleAndBillingSystem.csproj|solutionrelative:saleandbillingsystem\\loginform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{B31634E9-BD73-456C-9C4B-D100A12D7F5D}|saleAndBillingSystem\\saleAndBillingSystem.csproj|c:\\users\\msi\\desktop\\rupp-y4\\ooad\\project\\saleandbillingsystem\\saleandbillingsystem\\class1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{B31634E9-BD73-456C-9C4B-D100A12D7F5D}|saleAndBillingSystem\\saleAndBillingSystem.csproj|C:\\Users\\MSI\\Desktop\\RUPP-Y4\\OOAD\\project\\saleAndBillingSystem\\saleandbillingsystem\\user.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B31634E9-BD73-456C-9C4B-D100A12D7F5D}|saleAndBillingSystem\\saleAndBillingSystem.csproj|solutionrelative:saleandbillingsystem\\user.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B31634E9-BD73-456C-9C4B-D100A12D7F5D}|saleAndBillingSystem\\saleAndBillingSystem.csproj|C:\\Users\\MSI\\Desktop\\RUPP-Y4\\OOAD\\project\\saleAndBillingSystem\\saleandbillingsystem\\categories.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{B31634E9-BD73-456C-9C4B-D100A12D7F5D}|saleAndBillingSystem\\saleAndBillingSystem.csproj|solutionrelative:saleandbillingsystem\\categories.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B31634E9-BD73-456C-9C4B-D100A12D7F5D}|saleAndBillingSystem\\saleAndBillingSystem.csproj|C:\\Users\\MSI\\Desktop\\RUPP-Y4\\OOAD\\project\\saleAndBillingSystem\\saleandbillingsystem\\user.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B31634E9-BD73-456C-9C4B-D100A12D7F5D}|saleAndBillingSystem\\saleAndBillingSystem.csproj|solutionrelative:saleandbillingsystem\\user.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B31634E9-BD73-456C-9C4B-D100A12D7F5D}|saleAndBillingSystem\\saleAndBillingSystem.csproj|C:\\Users\\MSI\\Desktop\\RUPP-Y4\\OOAD\\project\\saleAndBillingSystem\\saleandbillingsystem\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B31634E9-BD73-456C-9C4B-D100A12D7F5D}|saleAndBillingSystem\\saleAndBillingSystem.csproj|solutionrelative:saleandbillingsystem\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B31634E9-BD73-456C-9C4B-D100A12D7F5D}|saleAndBillingSystem\\saleAndBillingSystem.csproj|C:\\Users\\MSI\\Desktop\\RUPP-Y4\\OOAD\\project\\saleAndBillingSystem\\saleandbillingsystem\\product.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{B31634E9-BD73-456C-9C4B-D100A12D7F5D}|saleAndBillingSystem\\saleAndBillingSystem.csproj|solutionrelative:saleandbillingsystem\\product.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B31634E9-BD73-456C-9C4B-D100A12D7F5D}|saleAndBillingSystem\\saleAndBillingSystem.csproj|C:\\Users\\MSI\\Desktop\\RUPP-Y4\\OOAD\\project\\saleAndBillingSystem\\saleandbillingsystem\\class1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{B31634E9-BD73-456C-9C4B-D100A12D7F5D}|saleAndBillingSystem\\saleAndBillingSystem.csproj|solutionrelative:saleandbillingsystem\\class1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B31634E9-BD73-456C-9C4B-D100A12D7F5D}|saleAndBillingSystem\\saleAndBillingSystem.csproj|C:\\Users\\MSI\\Desktop\\RUPP-Y4\\OOAD\\project\\saleAndBillingSystem\\saleandbillingsystem\\sale.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{B31634E9-BD73-456C-9C4B-D100A12D7F5D}|saleAndBillingSystem\\saleAndBillingSystem.csproj|solutionrelative:saleandbillingsystem\\sale.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B31634E9-BD73-456C-9C4B-D100A12D7F5D}|saleAndBillingSystem\\saleAndBillingSystem.csproj|C:\\Users\\MSI\\Desktop\\RUPP-Y4\\OOAD\\project\\saleAndBillingSystem\\saleandbillingsystem\\dashboard.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B31634E9-BD73-456C-9C4B-D100A12D7F5D}|saleAndBillingSystem\\saleAndBillingSystem.csproj|solutionrelative:saleandbillingsystem\\dashboard.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -30,83 +74,205 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 2,
+          "SelectedChildIndex": 14,
           "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 14,
+              "Title": "sale.cs [Design]",
+              "DocumentMoniker": "C:\\Users\\MSI\\Desktop\\RUPP-Y4\\OOAD\\project\\saleAndBillingSystem\\saleAndBillingSystem\\sale.cs",
+              "RelativeDocumentMoniker": "saleAndBillingSystem\\sale.cs",
+              "ToolTip": "C:\\Users\\MSI\\Desktop\\RUPP-Y4\\OOAD\\project\\saleAndBillingSystem\\saleAndBillingSystem\\sale.cs [Design]",
+              "RelativeToolTip": "saleAndBillingSystem\\sale.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-31T04:49:58.834Z",
+              "IsPinned": true
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
+              "Title": "product.cs [Design]",
+              "DocumentMoniker": "C:\\Users\\MSI\\Desktop\\RUPP-Y4\\OOAD\\project\\saleAndBillingSystem\\saleAndBillingSystem\\product.cs",
+              "RelativeDocumentMoniker": "saleAndBillingSystem\\product.cs",
+              "ToolTip": "C:\\Users\\MSI\\Desktop\\RUPP-Y4\\OOAD\\project\\saleAndBillingSystem\\saleAndBillingSystem\\product.cs [Design]",
+              "RelativeToolTip": "saleAndBillingSystem\\product.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-31T03:59:55.332Z",
+              "IsPinned": true
+            },
             {
               "$type": "Bookmark",
               "Name": "ST:0:0:{3ae79031-e1bc-11d0-8f78-00a0c9110057}"
             },
             {
-              "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "CashierForm.cs [Design]",
-              "DocumentMoniker": "C:\\Users\\MSI\\Desktop\\RUPP-Y4\\OOAD\\project\\saleAndBillingSystem\\saleAndBillingSystem\\CashierForm.cs",
-              "RelativeDocumentMoniker": "saleAndBillingSystem\\CashierForm.cs",
-              "ToolTip": "C:\\Users\\MSI\\Desktop\\RUPP-Y4\\OOAD\\project\\saleAndBillingSystem\\saleAndBillingSystem\\CashierForm.cs [Design]",
-              "RelativeToolTip": "saleAndBillingSystem\\CashierForm.cs [Design]",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-10-29T10:46:20.782Z",
-              "EditorCaption": " [Design]"
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{eefa5220-e298-11d0-8f78-00a0c9110057}"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "AdminForm.cs [Design]",
-              "DocumentMoniker": "C:\\Users\\MSI\\Desktop\\RUPP-Y4\\OOAD\\project\\saleAndBillingSystem\\saleAndBillingSystem\\AdminForm.cs",
-              "RelativeDocumentMoniker": "saleAndBillingSystem\\AdminForm.cs",
-              "ToolTip": "C:\\Users\\MSI\\Desktop\\RUPP-Y4\\OOAD\\project\\saleAndBillingSystem\\saleAndBillingSystem\\AdminForm.cs [Design]",
-              "RelativeToolTip": "saleAndBillingSystem\\AdminForm.cs [Design]",
+              "DocumentIndex": 11,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\MSI\\Desktop\\RUPP-Y4\\OOAD\\project\\saleAndBillingSystem\\saleAndBillingSystem\\Program.cs",
+              "RelativeDocumentMoniker": "saleAndBillingSystem\\Program.cs",
+              "ToolTip": "C:\\Users\\MSI\\Desktop\\RUPP-Y4\\OOAD\\project\\saleAndBillingSystem\\saleAndBillingSystem\\Program.cs",
+              "RelativeToolTip": "saleAndBillingSystem\\Program.cs",
+              "ViewState": "AgIAAAYAAAAAAAAAAAAAABIAAAAtAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-10-29T10:45:50.803Z",
-              "EditorCaption": " [Design]"
+              "WhenOpened": "2025-10-31T14:49:45.541Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 10,
+              "Title": "user.Designer.cs",
+              "DocumentMoniker": "C:\\Users\\MSI\\Desktop\\RUPP-Y4\\OOAD\\project\\saleAndBillingSystem\\saleAndBillingSystem\\user.Designer.cs",
+              "RelativeDocumentMoniker": "saleAndBillingSystem\\user.Designer.cs",
+              "ToolTip": "C:\\Users\\MSI\\Desktop\\RUPP-Y4\\OOAD\\project\\saleAndBillingSystem\\saleAndBillingSystem\\user.Designer.cs",
+              "RelativeToolTip": "saleAndBillingSystem\\user.Designer.cs",
+              "ViewState": "AgIAADcAAAAAAAAAAAAvwD0AAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-31T14:23:13.848Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "user.cs",
+              "DocumentMoniker": "C:\\Users\\MSI\\Desktop\\RUPP-Y4\\OOAD\\project\\saleAndBillingSystem\\saleAndBillingSystem\\user.cs",
+              "RelativeDocumentMoniker": "saleAndBillingSystem\\user.cs",
+              "ToolTip": "C:\\Users\\MSI\\Desktop\\RUPP-Y4\\OOAD\\project\\saleAndBillingSystem\\saleAndBillingSystem\\user.cs",
+              "RelativeToolTip": "saleAndBillingSystem\\user.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAGMAAAAzAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-31T14:15:55.643Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 13,
+              "Title": "Class1.cs",
+              "DocumentMoniker": "C:\\Users\\MSI\\Desktop\\RUPP-Y4\\OOAD\\project\\saleAndBillingSystem\\saleAndBillingSystem\\Class1.cs",
+              "RelativeDocumentMoniker": "saleAndBillingSystem\\Class1.cs",
+              "ToolTip": "C:\\Users\\MSI\\Desktop\\RUPP-Y4\\OOAD\\project\\saleAndBillingSystem\\saleAndBillingSystem\\Class1.cs",
+              "RelativeToolTip": "saleAndBillingSystem\\Class1.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-31T05:23:11.815Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "loginForm.cs",
+              "DocumentMoniker": "C:\\Users\\MSI\\Desktop\\RUPP-Y4\\OOAD\\project\\saleAndBillingSystem\\saleAndBillingSystem\\loginForm.cs",
+              "RelativeDocumentMoniker": "saleAndBillingSystem\\loginForm.cs",
+              "ToolTip": "C:\\Users\\MSI\\Desktop\\RUPP-Y4\\OOAD\\project\\saleAndBillingSystem\\saleAndBillingSystem\\loginForm.cs",
+              "RelativeToolTip": "saleAndBillingSystem\\loginForm.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAADYAAAANAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-31T05:22:33.908Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
               "Title": "loginForm.cs [Design]",
               "DocumentMoniker": "C:\\Users\\MSI\\Desktop\\RUPP-Y4\\OOAD\\project\\saleAndBillingSystem\\saleAndBillingSystem\\loginForm.cs",
               "RelativeDocumentMoniker": "saleAndBillingSystem\\loginForm.cs",
               "ToolTip": "C:\\Users\\MSI\\Desktop\\RUPP-Y4\\OOAD\\project\\saleAndBillingSystem\\saleAndBillingSystem\\loginForm.cs [Design]",
               "RelativeToolTip": "saleAndBillingSystem\\loginForm.cs [Design]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-10-29T10:26:40.944Z",
+              "WhenOpened": "2025-10-31T05:22:31.884Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "dashboard.Designer.cs",
+              "DocumentMoniker": "C:\\Users\\MSI\\Desktop\\RUPP-Y4\\OOAD\\project\\saleAndBillingSystem\\saleAndBillingSystem\\dashboard.Designer.cs",
+              "RelativeDocumentMoniker": "saleAndBillingSystem\\dashboard.Designer.cs",
+              "ToolTip": "C:\\Users\\MSI\\Desktop\\RUPP-Y4\\OOAD\\project\\saleAndBillingSystem\\saleAndBillingSystem\\dashboard.Designer.cs",
+              "RelativeToolTip": "saleAndBillingSystem\\dashboard.Designer.cs",
+              "ViewState": "AgIAADMAAAAAAAAAAAA4wEgAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-31T04:55:07.529Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 15,
+              "Title": "dashboard.cs",
+              "DocumentMoniker": "C:\\Users\\MSI\\Desktop\\RUPP-Y4\\OOAD\\project\\saleAndBillingSystem\\saleAndBillingSystem\\dashboard.cs",
+              "RelativeDocumentMoniker": "saleAndBillingSystem\\dashboard.cs",
+              "ToolTip": "C:\\Users\\MSI\\Desktop\\RUPP-Y4\\OOAD\\project\\saleAndBillingSystem\\saleAndBillingSystem\\dashboard.cs",
+              "RelativeToolTip": "saleAndBillingSystem\\dashboard.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAB8AAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-31T04:54:45.159Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "AdminForm.Designer.cs",
+              "DocumentMoniker": "C:\\Users\\MSI\\Desktop\\RUPP-Y4\\OOAD\\project\\saleAndBillingSystem\\saleAndBillingSystem\\AdminForm.Designer.cs",
+              "RelativeDocumentMoniker": "saleAndBillingSystem\\AdminForm.Designer.cs",
+              "ToolTip": "C:\\Users\\MSI\\Desktop\\RUPP-Y4\\OOAD\\project\\saleAndBillingSystem\\saleAndBillingSystem\\AdminForm.Designer.cs",
+              "RelativeToolTip": "saleAndBillingSystem\\AdminForm.Designer.cs",
+              "ViewState": "AgIAADcAAAAAAAAAAAAvwEAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-31T04:53:57.861Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "categories.cs [Design]",
+              "DocumentMoniker": "C:\\Users\\MSI\\Desktop\\RUPP-Y4\\OOAD\\project\\saleAndBillingSystem\\saleAndBillingSystem\\categories.cs",
+              "RelativeDocumentMoniker": "saleAndBillingSystem\\categories.cs",
+              "ToolTip": "C:\\Users\\MSI\\Desktop\\RUPP-Y4\\OOAD\\project\\saleAndBillingSystem\\saleAndBillingSystem\\categories.cs [Design]",
+              "RelativeToolTip": "saleAndBillingSystem\\categories.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-31T04:50:41.586Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "user.cs [Design]",
+              "DocumentMoniker": "C:\\Users\\MSI\\Desktop\\RUPP-Y4\\OOAD\\project\\saleAndBillingSystem\\saleAndBillingSystem\\user.cs",
+              "RelativeDocumentMoniker": "saleAndBillingSystem\\user.cs",
+              "ToolTip": "C:\\Users\\MSI\\Desktop\\RUPP-Y4\\OOAD\\project\\saleAndBillingSystem\\saleAndBillingSystem\\user.cs [Design]",
+              "RelativeToolTip": "saleAndBillingSystem\\user.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-31T04:01:48.419Z",
               "EditorCaption": " [Design]"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "loginForm.cs",
-              "DocumentMoniker": "C:\\Users\\MSI\\Desktop\\RUPP-Y4\\OOAD\\project\\saleAndBillingSystem\\saleAndBillingSystem\\loginForm.cs",
-              "RelativeDocumentMoniker": "saleAndBillingSystem\\loginForm.cs",
-              "ToolTip": "C:\\Users\\MSI\\Desktop\\RUPP-Y4\\OOAD\\project\\saleAndBillingSystem\\saleAndBillingSystem\\loginForm.cs",
-              "RelativeToolTip": "saleAndBillingSystem\\loginForm.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABwAAAAAAAAAAAAAAA==",
+              "DocumentIndex": 6,
+              "Title": "dashboard.cs [Design]",
+              "DocumentMoniker": "C:\\Users\\MSI\\Desktop\\RUPP-Y4\\OOAD\\project\\saleAndBillingSystem\\saleAndBillingSystem\\dashboard.cs",
+              "RelativeDocumentMoniker": "saleAndBillingSystem\\dashboard.cs",
+              "ToolTip": "C:\\Users\\MSI\\Desktop\\RUPP-Y4\\OOAD\\project\\saleAndBillingSystem\\saleAndBillingSystem\\dashboard.cs [Design]",
+              "RelativeToolTip": "saleAndBillingSystem\\dashboard.cs [Design]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-10-29T10:04:19.35Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-10-31T03:55:31.908Z"
             },
             {
               "$type": "Document",
               "DocumentIndex": 4,
-              "Title": "Class1.cs",
-              "DocumentMoniker": "C:\\Users\\MSI\\Desktop\\RUPP-Y4\\OOAD\\project\\saleAndBillingSystem\\saleAndBillingSystem\\Class1.cs",
-              "RelativeDocumentMoniker": "saleAndBillingSystem\\Class1.cs",
-              "ToolTip": "C:\\Users\\MSI\\Desktop\\RUPP-Y4\\OOAD\\project\\saleAndBillingSystem\\saleAndBillingSystem\\Class1.cs",
-              "RelativeToolTip": "saleAndBillingSystem\\Class1.cs",
-              "ViewState": "AgIAAAMAAAAAAAAAAAAAAA4AAAArAAAAAAAAAA==",
+              "Title": "AdminForm.cs",
+              "DocumentMoniker": "C:\\Users\\MSI\\Desktop\\RUPP-Y4\\OOAD\\project\\saleAndBillingSystem\\saleAndBillingSystem\\AdminForm.cs",
+              "RelativeDocumentMoniker": "saleAndBillingSystem\\AdminForm.cs",
+              "ToolTip": "C:\\Users\\MSI\\Desktop\\RUPP-Y4\\OOAD\\project\\saleAndBillingSystem\\saleAndBillingSystem\\AdminForm.cs",
+              "RelativeToolTip": "saleAndBillingSystem\\AdminForm.cs",
+              "ViewState": "AgIAACUAAAAAAAAAAIA0wDAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-10-29T09:58:10.383Z",
-              "EditorCaption": ""
-            }
-          ]
-        },
-        {
-          "DockedWidth": 48,
-          "SelectedChildIndex": -1,
-          "Children": [
+              "WhenOpened": "2025-10-30T14:14:27.971Z"
+            },
             {
-              "$type": "Bookmark",
-              "Name": "ST:0:0:{eefa5220-e298-11d0-8f78-00a0c9110057}"
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "AdminForm.cs [Design]",
+              "DocumentMoniker": "C:\\Users\\MSI\\Desktop\\RUPP-Y4\\OOAD\\project\\saleAndBillingSystem\\saleAndBillingSystem\\AdminForm.cs",
+              "RelativeDocumentMoniker": "saleAndBillingSystem\\AdminForm.cs",
+              "ToolTip": "C:\\Users\\MSI\\Desktop\\RUPP-Y4\\OOAD\\project\\saleAndBillingSystem\\saleAndBillingSystem\\AdminForm.cs [Design]",
+              "RelativeToolTip": "saleAndBillingSystem\\AdminForm.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-29T10:45:50.803Z"
             }
           ]
         }
