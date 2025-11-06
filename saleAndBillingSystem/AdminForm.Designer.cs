@@ -28,15 +28,17 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(AdminForm));
             this.backgroundWorker1 = new System.ComponentModel.BackgroundWorker();
             this.panelSide = new System.Windows.Forms.Panel();
+            this.btnExit = new System.Windows.Forms.Button();
+            this.button1 = new System.Windows.Forms.Button();
             this.label1 = new System.Windows.Forms.Label();
             this.btnSale = new System.Windows.Forms.Button();
             this.btnCate = new System.Windows.Forms.Button();
             this.btnPro = new System.Windows.Forms.Button();
             this.btnUser = new System.Windows.Forms.Button();
             this.btnDash = new System.Windows.Forms.Button();
-            this.panel2 = new System.Windows.Forms.Panel();
             this.panelMain = new System.Windows.Forms.Panel();
             this.dashboard1 = new saleAndBillingSystem.dashboard();
             this.user1 = new saleAndBillingSystem.user();
@@ -44,13 +46,16 @@
             this.sale1 = new saleAndBillingSystem.sale();
             this.categories1 = new saleAndBillingSystem.categories();
             this.product2 = new saleAndBillingSystem.product();
+            this.reportForm1 = new saleAndBillingSystem.ReportForm();
             this.panelSide.SuspendLayout();
             this.panelMain.SuspendLayout();
             this.SuspendLayout();
             // 
             // panelSide
             // 
-            this.panelSide.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
+            this.panelSide.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(255)))));
+            this.panelSide.Controls.Add(this.btnExit);
+            this.panelSide.Controls.Add(this.button1);
             this.panelSide.Controls.Add(this.label1);
             this.panelSide.Controls.Add(this.btnSale);
             this.panelSide.Controls.Add(this.btnCate);
@@ -63,12 +68,45 @@
             this.panelSide.Size = new System.Drawing.Size(250, 703);
             this.panelSide.TabIndex = 1;
             // 
+            // btnExit
+            // 
+            this.btnExit.BackColor = System.Drawing.Color.Red;
+            this.btnExit.Font = new System.Drawing.Font("Poppins", 12F);
+            this.btnExit.ForeColor = System.Drawing.Color.White;
+            this.btnExit.Image = global::saleAndBillingSystem.Properties.Resources.logout;
+            this.btnExit.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnExit.Location = new System.Drawing.Point(24, 611);
+            this.btnExit.Name = "btnExit";
+            this.btnExit.Padding = new System.Windows.Forms.Padding(10, 0, 10, 0);
+            this.btnExit.Size = new System.Drawing.Size(200, 46);
+            this.btnExit.TabIndex = 7;
+            this.btnExit.Text = "Exit";
+            this.btnExit.UseVisualStyleBackColor = false;
+            this.btnExit.Click += new System.EventHandler(this.btnExit_Click);
+            // 
+            // button1
+            // 
+            this.button1.BackColor = System.Drawing.Color.Blue;
+            this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button1.Font = new System.Drawing.Font("Poppins", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button1.ForeColor = System.Drawing.Color.White;
+            this.button1.Image = global::saleAndBillingSystem.Properties.Resources.seo_report;
+            this.button1.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.button1.Location = new System.Drawing.Point(24, 473);
+            this.button1.Name = "button1";
+            this.button1.Padding = new System.Windows.Forms.Padding(10, 0, 0, 0);
+            this.button1.Size = new System.Drawing.Size(200, 40);
+            this.button1.TabIndex = 6;
+            this.button1.Text = "Report";
+            this.button1.UseVisualStyleBackColor = false;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
+            // 
             // label1
             // 
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Poppins", 14F, System.Drawing.FontStyle.Bold);
             this.label1.ForeColor = System.Drawing.Color.Blue;
-            this.label1.Location = new System.Drawing.Point(17, 50);
+            this.label1.Location = new System.Drawing.Point(12, 67);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(224, 42);
             this.label1.TabIndex = 5;
@@ -159,15 +197,6 @@
             this.btnDash.UseVisualStyleBackColor = false;
             this.btnDash.MouseClick += new System.Windows.Forms.MouseEventHandler(this.btnDash_MouseClick);
             // 
-            // panel2
-            // 
-            this.panel2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
-            this.panel2.Dock = System.Windows.Forms.DockStyle.Top;
-            this.panel2.Location = new System.Drawing.Point(250, 0);
-            this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(1132, 50);
-            this.panel2.TabIndex = 2;
-            // 
             // panelMain
             // 
             this.panelMain.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
@@ -175,13 +204,13 @@
             | System.Windows.Forms.AnchorStyles.Right)));
             this.panelMain.BackColor = System.Drawing.Color.White;
             this.panelMain.Controls.Add(this.dashboard1);
-            this.panelMain.Controls.Add(this.panel2);
             this.panelMain.Controls.Add(this.panelSide);
             this.panelMain.Controls.Add(this.user1);
             this.panelMain.Controls.Add(this.product1);
             this.panelMain.Controls.Add(this.sale1);
             this.panelMain.Controls.Add(this.categories1);
             this.panelMain.Controls.Add(this.product2);
+            this.panelMain.Controls.Add(this.reportForm1);
             this.panelMain.Location = new System.Drawing.Point(0, 0);
             this.panelMain.Name = "panelMain";
             this.panelMain.Size = new System.Drawing.Size(1382, 703);
@@ -189,15 +218,19 @@
             // 
             // dashboard1
             // 
+            this.dashboard1.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("dashboard1.BackgroundImage")));
+            this.dashboard1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.dashboard1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.dashboard1.Location = new System.Drawing.Point(250, 50);
+            this.dashboard1.Location = new System.Drawing.Point(250, 0);
             this.dashboard1.Name = "dashboard1";
             this.dashboard1.Padding = new System.Windows.Forms.Padding(0, 10, 0, 0);
-            this.dashboard1.Size = new System.Drawing.Size(1132, 653);
+            this.dashboard1.Size = new System.Drawing.Size(1132, 703);
             this.dashboard1.TabIndex = 3;
             // 
             // user1
             // 
+            this.user1.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("user1.BackgroundImage")));
+            this.user1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.user1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.user1.Location = new System.Drawing.Point(0, 0);
             this.user1.Name = "user1";
@@ -206,6 +239,8 @@
             // 
             // product1
             // 
+            this.product1.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("product1.BackgroundImage")));
+            this.product1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.product1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.product1.Location = new System.Drawing.Point(0, 0);
             this.product1.Name = "product1";
@@ -214,6 +249,7 @@
             // 
             // sale1
             // 
+            this.sale1.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("sale1.BackgroundImage")));
             this.sale1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.sale1.Location = new System.Drawing.Point(0, 0);
             this.sale1.Name = "sale1";
@@ -223,6 +259,8 @@
             // 
             // categories1
             // 
+            this.categories1.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("categories1.BackgroundImage")));
+            this.categories1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.categories1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.categories1.Location = new System.Drawing.Point(0, 0);
             this.categories1.Name = "categories1";
@@ -232,11 +270,23 @@
             // 
             // product2
             // 
+            this.product2.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("product2.BackgroundImage")));
+            this.product2.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.product2.Dock = System.Windows.Forms.DockStyle.Fill;
             this.product2.Location = new System.Drawing.Point(0, 0);
             this.product2.Name = "product2";
             this.product2.Size = new System.Drawing.Size(1382, 703);
             this.product2.TabIndex = 6;
+            // 
+            // reportForm1
+            // 
+            this.reportForm1.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("reportForm1.BackgroundImage")));
+            this.reportForm1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.reportForm1.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.reportForm1.Location = new System.Drawing.Point(0, 0);
+            this.reportForm1.Name = "reportForm1";
+            this.reportForm1.Size = new System.Drawing.Size(1382, 703);
+            this.reportForm1.TabIndex = 9;
             // 
             // AdminForm
             // 
@@ -244,6 +294,7 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1382, 703);
             this.Controls.Add(this.panelMain);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "AdminForm";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "AdminForm";
@@ -262,14 +313,16 @@
         private System.Windows.Forms.Button btnPro;
         private System.Windows.Forms.Button btnUser;
         private System.Windows.Forms.Button btnDash;
-        private System.Windows.Forms.Panel panel2;
         private System.Windows.Forms.Panel panelMain;
-        private dashboard dashboard1;
         private product product1;
         private user user1;
         private product product2;
         private sale sale1;
         private categories categories1;
         private System.Windows.Forms.Label label1;
+        private dashboard dashboard1;
+        private ReportForm reportForm1;
+        private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.Button btnExit;
     }
 }

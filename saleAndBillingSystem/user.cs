@@ -16,7 +16,17 @@ namespace saleAndBillingSystem
         public user()
         {
             InitializeComponent();
+            this.Load += new System.EventHandler(this.userForm_Load);
             LoadUsers();
+        }
+
+        private void userForm_Load(object sender, EventArgs e)
+        {
+            if (cmbRole.Items.Count == 0)
+            {
+                cmbRole.Items.Add("Admin");
+                cmbRole.Items.Add("Cashier");
+            }
         }
         private void LoadUsers()
         {
@@ -28,12 +38,6 @@ namespace saleAndBillingSystem
                 da.Fill(dt);
                 dgvUsers.DataSource = dt;
             }
-        }
-        private void userForm_Load(object sender, EventArgs e)
-        {
-            cmbRole.Items.Add("Admin");
-            cmbRole.Items.Add("Cashier");
-            LoadUsers();
         }
         private void ClearFields()
         {
@@ -50,13 +54,15 @@ namespace saleAndBillingSystem
                 return;
             }
 
+            string role = cmbRole.SelectedItem.ToString();
+
             using (SqlConnection conn = Database.GetConnection())
             {
                 conn.Open();
                 SqlCommand cmd = new SqlCommand("INSERT INTO Users (Username, Pass, UserRole) VALUES (@u, @p, @r)", conn);
                 cmd.Parameters.AddWithValue("@u", txtUsername.Text);
                 cmd.Parameters.AddWithValue("@p", txtPassword.Text);
-                cmd.Parameters.AddWithValue("@r", cmbRole.Text);
+                cmd.Parameters.AddWithValue("@r", role);
                 cmd.ExecuteNonQuery();
                 MessageBox.Show("User added successfully!");
             }
@@ -88,20 +94,6 @@ namespace saleAndBillingSystem
 
             LoadUsers();
         }
-        private void dgvUsers_CellClick(object sender, DataGridViewCellEventArgs e)
-        {
-            // Make sure a valid row is clicked
-            if (e.RowIndex >= 0)
-            {
-                // Get the clicked row
-                DataGridViewRow row = dgvUsers.Rows[e.RowIndex];
-
-                // Fill the fields
-                txtUsername.Text = row.Cells["Username"].Value.ToString();
-                txtPassword.Text = row.Cells["Pass"].Value.ToString();
-                cmbRole.Text = row.Cells["UserRole"].Value.ToString();
-            }
-        }
 
         private void btnDelete_Click(object sender, EventArgs e)
         {
@@ -120,6 +112,30 @@ namespace saleAndBillingSystem
 
                 LoadUsers();
                 ClearFields();
+            }
+        }
+
+        private void dgvUsers_CellClick_1(object sender, DataGridViewCellEventArgs e)
+        {
+            // Make sure a valid row is clicked
+            if (e.RowIndex >= 0)
+            {
+                DataGridViewRow row = dgvUsers.Rows[e.RowIndex];
+
+                txtUsername.Text = row.Cells["Username"].Value.ToString();
+                txtPassword.Text = row.Cells["Pass"].Value.ToString();
+
+                string role = row.Cells["UserRole"].Value.ToString();
+
+                // Set ComboBox SelectedItem properly
+                if (cmbRole.Items.Contains(role))
+                {
+                    cmbRole.SelectedItem = role;
+                }
+                else
+                {
+                    cmbRole.SelectedIndex = -1; // Clear selection if role not in ComboBox
+                }
             }
         }
     }

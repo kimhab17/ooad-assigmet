@@ -11,6 +11,8 @@ namespace saleAndBillingSystem
             InitializeComponent();
         }
 
+        public string LoggedInCashier { get; private set; }
+
         private void btnLogin_Click(object sender, EventArgs e)
 
         {
@@ -42,7 +44,8 @@ namespace saleAndBillingSystem
                     }
                     else if (role.Trim().Equals("Cashier", StringComparison.OrdinalIgnoreCase))
                     {
-                        CashierForm cashier = new CashierForm();
+                        LoggedInCashier = txtUsername.Text;
+                        CashierForm cashier = new CashierForm(this);
                         cashier.FormClosed += (s, args) => this.Show();
                         cashier.Show();
                         this.Hide();
@@ -52,6 +55,25 @@ namespace saleAndBillingSystem
                 {
                     MessageBox.Show("Invalid username or password!");
                 }
+            }
+        }
+
+        private void btnClose_Click(object sender, EventArgs e)
+        {
+            DialogResult result = MessageBox.Show(
+        "Are you sure you want to close the program?",
+        "Exit Application",
+        MessageBoxButtons.YesNo,
+        MessageBoxIcon.Warning
+    );
+
+            if (result == DialogResult.Yes)
+            {
+                Application.Exit();
+            }
+            else
+            {
+                return;
             }
         }
     }
