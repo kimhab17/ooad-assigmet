@@ -3,7 +3,7 @@
   "WorkspaceRootPath": "C:\\Users\\MSI\\Desktop\\RUPP-Y4\\OOAD\\project\\saleAndBillingSystem\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{B31634E9-BD73-456C-9C4B-D100A12D7F5D}|saleAndBillingSystem\\saleAndBillingSystem.csproj|C:\\Users\\MSI\\Desktop\\RUPP-Y4\\OOAD\\project\\saleAndBillingSystem\\saleandbillingsystem\\adminform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "AbsoluteMoniker": "D:0:0:{B31634E9-BD73-456C-9C4B-D100A12D7F5D}|saleAndBillingSystem\\saleAndBillingSystem.csproj|c:\\users\\msi\\desktop\\rupp-y4\\ooad\\project\\saleandbillingsystem\\saleandbillingsystem\\adminform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
       "RelativeMoniker": "D:0:0:{B31634E9-BD73-456C-9C4B-D100A12D7F5D}|saleAndBillingSystem\\saleAndBillingSystem.csproj|solutionrelative:saleandbillingsystem\\adminform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     },
     {
@@ -51,7 +51,7 @@
       "RelativeMoniker": "D:0:0:{B31634E9-BD73-456C-9C4B-D100A12D7F5D}|saleAndBillingSystem\\saleAndBillingSystem.csproj|solutionrelative:saleandbillingsystem\\dashboard.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{B31634E9-BD73-456C-9C4B-D100A12D7F5D}|saleAndBillingSystem\\saleAndBillingSystem.csproj|c:\\users\\msi\\desktop\\rupp-y4\\ooad\\project\\saleandbillingsystem\\saleandbillingsystem\\reportform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{B31634E9-BD73-456C-9C4B-D100A12D7F5D}|saleAndBillingSystem\\saleAndBillingSystem.csproj|C:\\Users\\MSI\\Desktop\\RUPP-Y4\\OOAD\\project\\saleAndBillingSystem\\saleandbillingsystem\\reportform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{B31634E9-BD73-456C-9C4B-D100A12D7F5D}|saleAndBillingSystem\\saleAndBillingSystem.csproj|solutionrelative:saleandbillingsystem\\reportform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
@@ -146,8 +146,7 @@
               "RelativeToolTip": "saleAndBillingSystem\\product.cs [Design]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-10-31T03:59:55.332Z",
-              "IsPinned": true,
-              "EditorCaption": " [Design]"
+              "IsPinned": true
             },
             {
               "$type": "Document",
@@ -159,8 +158,7 @@
               "RelativeToolTip": "saleAndBillingSystem\\CashierForm.cs [Design]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-11-02T06:11:50.197Z",
-              "IsPinned": true,
-              "EditorCaption": " [Design]"
+              "IsPinned": true
             },
             {
               "$type": "Document",
@@ -173,8 +171,7 @@
               "ViewState": "AgIAAAAAAAAAAAAAAAAAABMAAAAvAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-10-31T14:49:45.541Z",
-              "IsPinned": true,
-              "EditorCaption": ""
+              "IsPinned": true
             },
             {
               "$type": "Document",
@@ -187,8 +184,7 @@
               "ViewState": "AgIAADcAAAAAAAAAAAA4wEsAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-10-31T05:22:33.908Z",
-              "IsPinned": true,
-              "EditorCaption": ""
+              "IsPinned": true
             },
             {
               "$type": "Document",
@@ -201,8 +197,7 @@
               "ViewState": "AgIAAKgAAAAAAAAAAAAswLwAAAAyAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-11-02T06:24:03.689Z",
-              "IsPinned": true,
-              "EditorCaption": ""
+              "IsPinned": true
             },
             {
               "$type": "Document",
@@ -215,8 +210,7 @@
               "ViewState": "AgIAAGsAAAAAAAAAAAAlwFcAAAAMAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-11-01T07:23:20.594Z",
-              "IsPinned": true,
-              "EditorCaption": ""
+              "IsPinned": true
             },
             {
               "$type": "Document",
@@ -253,8 +247,7 @@
               "RelativeToolTip": "saleAndBillingSystem\\categories.cs [Design]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-10-31T04:50:41.586Z",
-              "IsPinned": true,
-              "EditorCaption": " [Design]"
+              "IsPinned": true
             },
             {
               "$type": "Document",
@@ -266,8 +259,7 @@
               "RelativeToolTip": "saleAndBillingSystem\\dashboard.cs [Design]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-10-31T03:55:31.908Z",
-              "IsPinned": true,
-              "EditorCaption": " [Design]"
+              "IsPinned": true
             },
             {
               "$type": "Document",
@@ -279,8 +271,7 @@
               "RelativeToolTip": "saleAndBillingSystem\\ReportForm.cs [Design]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-11-04T06:28:02.922Z",
-              "IsPinned": true,
-              "EditorCaption": " [Design]"
+              "IsPinned": true
             },
             {
               "$type": "Document",
@@ -293,8 +284,7 @@
               "ViewState": "AgIAAAAAAAAAAAAAAAAAABEAAAAlAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-11-01T07:23:31.499Z",
-              "IsPinned": true,
-              "EditorCaption": ""
+              "IsPinned": true
             },
             {
               "$type": "Document",
@@ -306,8 +296,7 @@
               "RelativeToolTip": "saleAndBillingSystem\\loginForm.cs [Design]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-11-02T06:12:51.95Z",
-              "IsPinned": true,
-              "EditorCaption": " [Design]"
+              "IsPinned": true
             },
             {
               "$type": "Bookmark",
@@ -327,8 +316,7 @@
               "RelativeToolTip": "saleAndBillingSystem\\CashierForm.Designer.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAABYAAAAIAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-11-02T06:24:09.91Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-11-02T06:24:09.91Z"
             },
             {
               "$type": "Document",
@@ -352,8 +340,7 @@
               "RelativeToolTip": "saleAndBillingSystem\\categories.Designer.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAABYAAAAIAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-11-01T08:20:39.434Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-11-01T08:20:39.434Z"
             },
             {
               "$type": "Document",
@@ -378,8 +365,7 @@
               "RelativeToolTip": "saleAndBillingSystem\\user.Designer.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAABYAAAAIAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-10-31T14:23:13.848Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-10-31T14:23:13.848Z"
             },
             {
               "$type": "Document",
@@ -391,8 +377,7 @@
               "RelativeToolTip": "saleAndBillingSystem\\dashboard.cs",
               "ViewState": "AgIAABkAAAAAAAAAAIA0wBwAAAANAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-10-31T04:54:45.159Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-10-31T04:54:45.159Z"
             },
             {
               "$type": "Document",
@@ -404,8 +389,7 @@
               "RelativeToolTip": "saleAndBillingSystem\\AdminForm.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAADgAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-10-30T14:14:27.971Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-10-30T14:14:27.971Z"
             },
             {
               "$type": "Document",
@@ -417,8 +401,7 @@
               "RelativeToolTip": "saleAndBillingSystem\\ReportForm.cs",
               "ViewState": "AgIAAD8AAAAAAAAAAAAAAGYAAABaAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-11-04T06:41:27.554Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-11-04T06:41:27.554Z"
             },
             {
               "$type": "Document",
@@ -430,8 +413,7 @@
               "RelativeToolTip": "saleAndBillingSystem\\ReportForm.Designer.cs",
               "ViewState": "AgIAAFQAAAAAAAAAAAAlwFwAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-11-04T06:51:27.338Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-11-04T06:51:27.338Z"
             },
             {
               "$type": "Document",
@@ -455,8 +437,7 @@
               "RelativeToolTip": "saleAndBillingSystem\\categories.cs",
               "ViewState": "AgIAAF0AAAAAAAAAAAAtwGkAAAAgAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-11-01T08:14:45.251Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-11-01T08:14:45.251Z"
             },
             {
               "$type": "Document",
@@ -492,8 +473,7 @@
               "RelativeToolTip": "saleAndBillingSystem\\dashboard.Designer.cs",
               "ViewState": "AgIAADwAAAAAAAAAAAAswEIAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-10-31T04:55:07.529Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-10-31T04:55:07.529Z"
             }
           ]
         }
