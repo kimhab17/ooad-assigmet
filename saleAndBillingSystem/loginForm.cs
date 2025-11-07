@@ -11,18 +11,18 @@ namespace saleAndBillingSystem
             InitializeComponent();
         }
 
+        public string LoggedInCashier { get; private set; }
+
         private void btnLogin_Click(object sender, EventArgs e)
+
         {
             string username = txtUsername.Text.Trim();
             string password = txtPassword.Text.Trim();
 
-            SqlConnection conn = Database.GetConnection();
-
-            try
+            using (SqlConnection conn = Database.GetConnection())
             {
                 conn.Open();
-
-                string query = "SELECT Role FROM Users WHERE Username=@user AND Password=@pass";
+                string query = "SELECT UserRole FROM Users WHERE Username=@user AND Pass=@pass";
                 SqlCommand cmd = new SqlCommand(query, conn);
                 cmd.Parameters.AddWithValue("@user", username);
                 cmd.Parameters.AddWithValue("@pass", password);
@@ -31,33 +31,49 @@ namespace saleAndBillingSystem
 
                 if (reader.Read())
                 {
-                    string role = reader["Role"].ToString();
+                    string role = reader["UserRole"].ToString();
 
-                    MessageBox.Show($"Login successful! Welcome, {role}.", "Success", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                    MessageBox.Show("Role from database: " + role);
 
-                    this.Hide();
-
-                    if (role == "Admin")
+                    if (role.Trim().Equals("Admin", StringComparison.OrdinalIgnoreCase))
                     {
-                        new AdminForm().Show();
+                        AdminForm admin = new AdminForm();
+                        admin.FormClosed += (s, args) => this.Show();
+                        admin.Show();
+                        this.Hide();
                     }
-                    else if (role == "Cashier")
+                    else if (role.Trim().Equals("Cashier", StringComparison.OrdinalIgnoreCase))
                     {
-                        new CashierForm().Show();
+                        LoggedInCashier = txtUsername.Text;
+                        CashierForm cashier = new CashierForm(this);
+                        cashier.FormClosed += (s, args) => this.Show();
+                        cashier.Show();
+                        this.Hide();
                     }
                 }
                 else
                 {
-                    MessageBox.Show("Invalid username or password!", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                    MessageBox.Show("Invalid username or password!");
                 }
             }
-            catch (Exception ex)
+        }
+
+        private void btnClose_Click(object sender, EventArgs e)
+        {
+            DialogResult result = MessageBox.Show(
+        "Are you sure you want to close the program?",
+        "Exit Application",
+        MessageBoxButtons.YesNo,
+        MessageBoxIcon.Warning
+    );
+
+            if (result == DialogResult.Yes)
             {
-                MessageBox.Show("Error: " + ex.Message);
+                Application.Exit();
             }
-            finally
+            else
             {
-                conn.Close();
+                return;
             }
         }
     }
