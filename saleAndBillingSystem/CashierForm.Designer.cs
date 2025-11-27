@@ -41,6 +41,7 @@
             this.label2 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
             this.btnExit = new System.Windows.Forms.Button();
+            this.btnPrintInvoice = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.dgvCart)).BeginInit();
             this.SuspendLayout();
             // 
@@ -116,7 +117,7 @@
             this.btnCheckout.ForeColor = System.Drawing.Color.White;
             this.btnCheckout.Image = global::saleAndBillingSystem.Properties.Resources.checkout;
             this.btnCheckout.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.btnCheckout.Location = new System.Drawing.Point(336, 301);
+            this.btnCheckout.Location = new System.Drawing.Point(315, 301);
             this.btnCheckout.Name = "btnCheckout";
             this.btnCheckout.Padding = new System.Windows.Forms.Padding(10, 0, 10, 0);
             this.btnCheckout.Size = new System.Drawing.Size(133, 42);
@@ -208,6 +209,23 @@
             this.btnExit.UseVisualStyleBackColor = false;
             this.btnExit.Click += new System.EventHandler(this.btnExit_Click);
             // 
+            // btnPrintInvoice
+            // 
+            this.btnPrintInvoice.BackColor = System.Drawing.Color.YellowGreen;
+            this.btnPrintInvoice.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
+            this.btnPrintInvoice.ForeColor = System.Drawing.Color.White;
+            this.btnPrintInvoice.Image = global::saleAndBillingSystem.Properties.Resources.paper;
+            this.btnPrintInvoice.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.btnPrintInvoice.Location = new System.Drawing.Point(1149, 385);
+            this.btnPrintInvoice.Name = "btnPrintInvoice";
+            this.btnPrintInvoice.Padding = new System.Windows.Forms.Padding(10, 0, 10, 0);
+            this.btnPrintInvoice.Size = new System.Drawing.Size(177, 42);
+            this.btnPrintInvoice.TabIndex = 16;
+            this.btnPrintInvoice.Text = "Print Invoice";
+            this.btnPrintInvoice.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnPrintInvoice.UseVisualStyleBackColor = false;
+            this.btnPrintInvoice.Click += new System.EventHandler(this.btnPrintInvoice_Click);
+            // 
             // CashierForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
@@ -215,6 +233,7 @@
             this.BackgroundImage = global::saleAndBillingSystem.Properties.Resources.cashire_bg;
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(1364, 656);
+            this.Controls.Add(this.btnPrintInvoice);
             this.Controls.Add(this.btnExit);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.label2);
@@ -253,5 +272,6 @@
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Button btnExit;
+        private System.Windows.Forms.Button btnPrintInvoice;
     }
 }

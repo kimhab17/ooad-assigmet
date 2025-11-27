@@ -17,8 +17,6 @@ namespace saleAndBillingSystem
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
             Application.Run(new loginForm());
-            //Application.Run(new AdminForm());
-            //Application.Run(new CashierForm());
         }
     }
 }

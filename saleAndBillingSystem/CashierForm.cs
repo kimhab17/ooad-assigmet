@@ -4,6 +4,7 @@ using System.ComponentModel;
 using System.Data;
 using System.Data.SqlClient;
 using System.Drawing;
+using System.Drawing.Printing;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -14,13 +15,17 @@ namespace saleAndBillingSystem
     public partial class CashierForm : Form
     {
         private string cashierName;
+        private int lastSaleId = 0;  // to remember the latest sale ID
+        private PrintDocument printDocument1 = new PrintDocument();
+        private PrintPreviewDialog printPreviewDialog1 = new PrintPreviewDialog();
         public CashierForm(loginForm loginForm)
         {
             InitializeComponent();
             LoadProducts();
             this.Load += CashierForm_Load;
-            cashierName = loginForm.LoggedInCashier; // ទាញឈ្មោះ cashier
+            cashierName = loginForm.LoggedInCashier;
         }
+
         private void LoadProducts()
         {
             using (SqlConnection conn = Database.GetConnection())
@@ -130,6 +135,7 @@ namespace saleAndBillingSystem
 
                 // ទទួលបាន SaleID ថ្មី
                 int saleId = (int)cmdSale.ExecuteScalar();
+                lastSaleId = saleId;
 
                 // ✅ ជំហានទី២៖ បញ្ចូលទិន្នន័យទៅ SaleDetails
                 foreach (DataGridViewRow row in dgvCart.Rows)
@@ -192,6 +198,87 @@ namespace saleAndBillingSystem
             else
             {
                 return;
+            }
+        }
+
+        private void btnPrintInvoice_Click(object sender, EventArgs e)
+        {
+            if (lastSaleId == 0)
+            {
+                MessageBox.Show("No sale found to print. Please complete a checkout first.", "Warning", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                return;
+            }
+
+            printDocument1.PrintPage += PrintDocument1_PrintPage;
+            printPreviewDialog1.Document = printDocument1;
+            printPreviewDialog1.ShowDialog();
+        }
+        private void PrintDocument1_PrintPage(object sender, System.Drawing.Printing.PrintPageEventArgs e)
+        {
+            using (SqlConnection conn = Database.GetConnection())
+            {
+                conn.Open();
+
+                // 🧾 Get Sale Info
+                SqlCommand cmdSale = new SqlCommand("SELECT * FROM Sales WHERE SaleID=@id", conn);
+                cmdSale.Parameters.AddWithValue("@id", lastSaleId);
+                SqlDataReader saleReader = cmdSale.ExecuteReader();
+                saleReader.Read();
+
+                string cashier = saleReader["CashierName"].ToString();
+                DateTime saleDate = Convert.ToDateTime(saleReader["SaleDate"]);
+                decimal total = Convert.ToDecimal(saleReader["TotalAmount"]);
+                saleReader.Close();
+
+                // 🧾 Get Sale Details
+                SqlCommand cmdDetails = new SqlCommand("SELECT ProductName, Quantity, UnitPrice FROM SaleDetails WHERE SaleID=@id", conn);
+                cmdDetails.Parameters.AddWithValue("@id", lastSaleId);
+                SqlDataReader dr = cmdDetails.ExecuteReader();
+
+                // 🖨 Print Header
+                int y = 60;
+                e.Graphics.DrawString("🛒 Sale Invoice", new Font("Arial", 16, FontStyle.Bold), Brushes.Black, 250, y);
+                y += 40;
+                e.Graphics.DrawString($"Sale ID: {lastSaleId}", new Font("Arial", 10, FontStyle.Regular), Brushes.Black, 50, y);
+                y += 20;
+                e.Graphics.DrawString($"Cashier: {cashier}", new Font("Arial", 10), Brushes.Black, 50, y);
+                y += 20;
+                e.Graphics.DrawString($"Date: {saleDate}", new Font("Arial", 10), Brushes.Black, 50, y);
+                y += 30;
+                e.Graphics.DrawLine(Pens.Black, 50, y, 750, y);
+                y += 20;
+
+                // 🧾 Table Headers
+                e.Graphics.DrawString("Product", new Font("Arial", 10, FontStyle.Bold), Brushes.Black, 60, y);
+                e.Graphics.DrawString("Qty", new Font("Arial", 10, FontStyle.Bold), Brushes.Black, 250, y);
+                e.Graphics.DrawString("Price", new Font("Arial", 10, FontStyle.Bold), Brushes.Black, 350, y);
+                e.Graphics.DrawString("Total", new Font("Arial", 10, FontStyle.Bold), Brushes.Black, 450, y);
+                y += 25;
+                e.Graphics.DrawLine(Pens.Black, 50, y, 750, y);
+                y += 10;
+
+                // 🧾 Print Each Item
+                while (dr.Read())
+                {
+                    string pname = dr["ProductName"].ToString();
+                    int qty = Convert.ToInt32(dr["Quantity"]);
+                    decimal price = Convert.ToDecimal(dr["UnitPrice"]);
+                    decimal lineTotal = qty * price;
+
+                    e.Graphics.DrawString(pname, new Font("Arial", 10), Brushes.Black, 60, y);
+                    e.Graphics.DrawString(qty.ToString(), new Font("Arial", 10), Brushes.Black, 250, y);
+                    e.Graphics.DrawString(price.ToString("0.00"), new Font("Arial", 10), Brushes.Black, 350, y);
+                    e.Graphics.DrawString(lineTotal.ToString("0.00"), new Font("Arial", 10), Brushes.Black, 450, y);
+                    y += 20;
+                }
+                dr.Close();
+
+                y += 20;
+                e.Graphics.DrawLine(Pens.Black, 50, y, 750, y);
+                y += 30;
+                e.Graphics.DrawString("Grand Total: $" + total.ToString("0.00"), new Font("Arial", 12, FontStyle.Bold), Brushes.Black, 400, y);
+                y += 40;
+                e.Graphics.DrawString("Thank you for shopping with us!", new Font("Arial", 10, FontStyle.Italic), Brushes.Black, 250, y);
             }
         }
     }

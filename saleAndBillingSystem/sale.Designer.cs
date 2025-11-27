@@ -45,9 +45,10 @@
             // 
             // dgvSales
             // 
-            this.dgvSales.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dgvSales.ColumnHeadersHeight = 29;
             this.dgvSales.Location = new System.Drawing.Point(19, 73);
             this.dgvSales.Name = "dgvSales";
+            this.dgvSales.RightToLeft = System.Windows.Forms.RightToLeft.No;
             this.dgvSales.RowHeadersWidth = 51;
             this.dgvSales.RowTemplate.Height = 24;
             this.dgvSales.Size = new System.Drawing.Size(617, 214);
@@ -58,6 +59,7 @@
             this.dgvSaleDetails.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dgvSaleDetails.Location = new System.Drawing.Point(19, 360);
             this.dgvSaleDetails.Name = "dgvSaleDetails";
+            this.dgvSaleDetails.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
             this.dgvSaleDetails.RowHeadersWidth = 51;
             this.dgvSaleDetails.RowTemplate.Height = 24;
             this.dgvSaleDetails.Size = new System.Drawing.Size(713, 264);

@@ -139,5 +139,48 @@ namespace saleAndBillingSystem
             txtPrice.Text = row.Cells["Price"].Value.ToString();
             txtQuantity.Text = row.Cells["Quantity"].Value.ToString();
         }
+
+        private void btnSearch_Click(object sender, EventArgs e)
+        {
+            string keyword = txtSearch.Text.Trim();
+
+            using (SqlConnection conn = Database.GetConnection())
+            {
+                // ✅ Use LIKE to find partial matches by ProductName or CategoryName
+                string query = @"
+        SELECT 
+            p.ProductID,
+            p.ProductName,
+            p.Price,
+            p.Quantity,
+            c.CategoryName
+        FROM Products p
+        INNER JOIN Categories c ON p.CategoryID = c.CategoryID
+        WHERE p.ProductName LIKE @keyword OR c.CategoryName LIKE @keyword";
+
+                SqlDataAdapter da = new SqlDataAdapter(query, conn);
+                da.SelectCommand.Parameters.AddWithValue("@keyword", "%" + keyword + "%");
+
+                DataTable dt = new DataTable();
+                da.Fill(dt);
+
+                if (dt.Rows.Count > 0)
+                {
+                    dgvProducts.DataSource = dt;
+                }
+                else
+                {
+                    MessageBox.Show("No products found for your search.", "Search Result", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                    dgvProducts.DataSource = null; // clear the table if no data
+                }
+            }
+        }
+        private void txtSearch_KeyDown(object sender, KeyEventArgs e)
+        {
+            if (e.KeyCode == Keys.Enter)
+            {
+                btnSearch.PerformClick();
+            }
+        }
     }
 }

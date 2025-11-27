@@ -110,5 +110,6 @@ namespace saleAndBillingSystem
                 lblTotalSales.ForeColor = System.Drawing.Color.Red;
             }
         }
+
     }
 }
