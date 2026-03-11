@@ -1,4 +1,4 @@
-﻿namespace saleAndBillingSystem
+namespace saleAndBillingSystem
 {
     partial class categories
     {
@@ -42,7 +42,6 @@
             this.txtCategoryName.Font = new System.Drawing.Font("Poppins", 12F);
             this.txtCategoryName.Location = new System.Drawing.Point(248, 78);
             this.txtCategoryName.Name = "txtCategoryName";
-            this.txtCategoryName.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
             this.txtCategoryName.Size = new System.Drawing.Size(206, 37);
             this.txtCategoryName.TabIndex = 0;
             // 
@@ -79,7 +78,6 @@
             this.dgvCategories.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dgvCategories.Location = new System.Drawing.Point(52, 174);
             this.dgvCategories.Name = "dgvCategories";
-            this.dgvCategories.RightToLeft = System.Windows.Forms.RightToLeft.No;
             this.dgvCategories.RowHeadersWidth = 51;
             this.dgvCategories.RowTemplate.Height = 24;
             this.dgvCategories.Size = new System.Drawing.Size(402, 295);
@@ -134,8 +132,8 @@
             this.Controls.Add(this.txtCategoryName);
             this.DoubleBuffered = true;
             this.Name = "categories";
-            this.RightToLeft = System.Windows.Forms.RightToLeft.No;
             this.Size = new System.Drawing.Size(1132, 653);
+            this.Load += new System.EventHandler(this.CategoryForm_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dgvCategories)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();

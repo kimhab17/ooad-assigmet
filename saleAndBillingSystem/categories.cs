@@ -29,6 +29,7 @@ namespace saleAndBillingSystem
 
         private void LoadCategories()
         {
+            dgvCategories.AutoGenerateColumns = true;
             dgvCategories.DataSource = _repository.GetAllCategories();
         }
 

@@ -18,11 +18,6 @@ namespace saleAndBillingSystem
             InitializeComponent();
         }
 
-        private void DashboardForm_Load(object sender, EventArgs e)
-        {
-            if (this.DesignMode) return;
-            LoadDashboardData();
-        }
 
         private void LoadDashboardData()
         {
@@ -62,7 +57,8 @@ namespace saleAndBillingSystem
 
         private void dashboard_Load(object sender, EventArgs e)
         {
-
+            if (this.DesignMode) return;
+            LoadDashboardData();
         }
 
         private void z_Click(object sender, EventArgs e)
