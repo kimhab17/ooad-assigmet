@@ -1,4 +1,4 @@
-﻿namespace saleAndBillingSystem
+namespace saleAndBillingSystem
 {
     partial class product
     {
@@ -232,6 +232,7 @@
             this.DoubleBuffered = true;
             this.Name = "product";
             this.Size = new System.Drawing.Size(1132, 653);
+            this.Load += new System.EventHandler(this.ProductForm_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dgvProducts)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();

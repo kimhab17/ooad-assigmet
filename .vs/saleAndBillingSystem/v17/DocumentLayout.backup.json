@@ -5,10 +5,6 @@
     {
       "AbsoluteMoniker": "D:0:0:{B31634E9-BD73-456C-9C4B-D100A12D7F5D}|saleAndBillingSystem\\saleAndBillingSystem.csproj|c:\\users\\msi\\desktop\\rupp-y4\\ooad\\project\\saleandbillingsystem\\saleandbillingsystem\\cashierform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
       "RelativeMoniker": "D:0:0:{B31634E9-BD73-456C-9C4B-D100A12D7F5D}|saleAndBillingSystem\\saleAndBillingSystem.csproj|solutionrelative:saleandbillingsystem\\cashierform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{B31634E9-BD73-456C-9C4B-D100A12D7F5D}|saleAndBillingSystem\\saleAndBillingSystem.csproj|C:\\Users\\MSI\\Desktop\\RUPP-Y4\\OOAD\\project\\saleAndBillingSystem\\saleAndBillingSystem\\dashboard.Designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{B31634E9-BD73-456C-9C4B-D100A12D7F5D}|saleAndBillingSystem\\saleAndBillingSystem.csproj|solutionrelative:saleAndBillingSystem\\dashboard.Designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -40,18 +36,6 @@
             {
               "$type": "Bookmark",
               "Name": "ST:0:0:{eefa5220-e298-11d0-8f78-00a0c9110057}"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "dashboard.Designer.cs",
-              "DocumentMoniker": "C:\\Users\\MSI\\Desktop\\RUPP-Y4\\OOAD\\project\\saleAndBillingSystem\\saleAndBillingSystem\\dashboard.Designer.cs",
-              "RelativeDocumentMoniker": "saleAndBillingSystem\\dashboard.Designer.cs",
-              "ToolTip": "C:\\Users\\MSI\\Desktop\\RUPP-Y4\\OOAD\\project\\saleAndBillingSystem\\saleAndBillingSystem\\dashboard.Designer.cs",
-              "RelativeToolTip": "saleAndBillingSystem\\dashboard.Designer.cs",
-              "ViewState": "AgIAAAUAAAAAAAAAAAAkwBYAAAAIAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-11-07T13:30:24.558Z"
             }
           ]
         }

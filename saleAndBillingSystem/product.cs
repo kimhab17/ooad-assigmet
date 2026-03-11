@@ -61,9 +61,13 @@ namespace saleAndBillingSystem
         }
 
         private void btnAdd_Click(object sender, EventArgs e)
-           
         {
-            int categoryID = int.Parse(cmbCategory.SelectedValue.ToString());
+            if (cmbCategory.SelectedValue == null)
+            {
+                MessageBox.Show("Please select a category.", "Validation Error", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                return;
+            }
+            int categoryID = Convert.ToInt32(cmbCategory.SelectedValue);
             using (SqlConnection conn = Database.GetConnection())
             {
                 string query = "INSERT INTO Products(ProductName, Price, Quantity, CategoryID) VALUES(@name, @price, @qty, @cat)";
