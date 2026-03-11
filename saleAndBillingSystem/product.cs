@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -16,12 +16,12 @@ namespace saleAndBillingSystem
         public product()
         {
             InitializeComponent();
-            LoadProducts();
-            LoadCategories();
         }
         private void ProductForm_Load(object sender, EventArgs e)
         {
+            if (this.DesignMode) return;
             LoadProducts();
+            LoadCategories();
         }
 
         private void LoadProducts()

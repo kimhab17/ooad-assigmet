@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -11,9 +11,7 @@ namespace saleAndBillingSystem
     {
         public static SqlConnection GetConnection()
         {
-            SqlConnection conn = new SqlConnection(
-                @"Data Source=. \SQLEXPRESS;Initial Catalog=SalesBillingDB;Integrated Security=True");
-            return conn;
+            return DatabaseManager.Instance.GetConnection();
         }
     }
 }

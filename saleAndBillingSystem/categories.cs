@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -13,29 +13,23 @@ namespace saleAndBillingSystem
 {
     public partial class categories : UserControl
     {
+        private CategoryRepository _repository;
+
         public categories()
         {
             InitializeComponent();
-            LoadCategories();
-
-
+            _repository = new CategoryRepository();
         }
 
         private void CategoryForm_Load(object sender, EventArgs e)
         {
+            if (this.DesignMode) return;
             LoadCategories();
         }
 
         private void LoadCategories()
         {
-            using (SqlConnection conn = Database.GetConnection())
-            {
-                string query = "SELECT * FROM Categories ORDER BY CategoryID DESC";
-                SqlDataAdapter da = new SqlDataAdapter(query, conn);
-                DataTable dt = new DataTable();
-                da.Fill(dt);
-                dgvCategories.DataSource = dt;
-            }
+            dgvCategories.DataSource = _repository.GetAllCategories();
         }
 
         private void btnAdd_Click(object sender, EventArgs e)
@@ -46,15 +40,7 @@ namespace saleAndBillingSystem
                 return;
             }
 
-            using (SqlConnection conn = Database.GetConnection())
-            {
-                string query = "INSERT INTO Categories (CategoryName) VALUES (@name)";
-                SqlCommand cmd = new SqlCommand(query, conn);
-                cmd.Parameters.AddWithValue("@name", txtCategoryName.Text.Trim());
-                conn.Open();
-                cmd.ExecuteNonQuery();
-                conn.Close();
-            }
+            _repository.AddCategory(txtCategoryName.Text.Trim());
 
             MessageBox.Show("Category added successfully!");
             txtCategoryName.Clear();
@@ -73,16 +59,7 @@ namespace saleAndBillingSystem
 
             int id = Convert.ToInt32(dgvCategories.CurrentRow.Cells["CategoryID"].Value);
 
-            using (SqlConnection conn = Database.GetConnection())
-            {
-                string query = "UPDATE Categories SET CategoryName=@name WHERE CategoryID=@id";
-                SqlCommand cmd = new SqlCommand(query, conn);
-                cmd.Parameters.AddWithValue("@name", txtCategoryName.Text.Trim());
-                cmd.Parameters.AddWithValue("@id", id);
-                conn.Open();
-                cmd.ExecuteNonQuery();
-                conn.Close();
-            }
+            _repository.UpdateCategory(id, txtCategoryName.Text.Trim());
 
             MessageBox.Show("Category updated successfully!");
             txtCategoryName.Clear();
@@ -98,15 +75,7 @@ namespace saleAndBillingSystem
             DialogResult confirm = MessageBox.Show("Do you want to delete this category?", "Confirm", MessageBoxButtons.YesNo, MessageBoxIcon.Warning);
             if (confirm == DialogResult.Yes)
             {
-                using (SqlConnection conn = Database.GetConnection())
-                {
-                    string query = "DELETE FROM Categories WHERE CategoryID=@id";
-                    SqlCommand cmd = new SqlCommand(query, conn);
-                    cmd.Parameters.AddWithValue("@id", id);
-                    conn.Open();
-                    cmd.ExecuteNonQuery();
-                    conn.Close();
-                }
+                _repository.DeleteCategory(id);
 
                 MessageBox.Show("Category deleted successfully!");
                 txtCategoryName.Clear();

@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -17,7 +17,6 @@ namespace saleAndBillingSystem
         {
             InitializeComponent();
             this.Load += new System.EventHandler(this.userForm_Load);
-            LoadUsers();
         }
 
         private void userForm_Load(object sender, EventArgs e)
@@ -27,6 +26,9 @@ namespace saleAndBillingSystem
                 cmbRole.Items.Add("Admin");
                 cmbRole.Items.Add("Cashier");
             }
+
+            if (this.DesignMode) return;
+            LoadUsers();
         }
         private void LoadUsers()
         {

@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 using System.Data.SqlClient;
 using System.Windows.Forms;
 
@@ -35,20 +35,19 @@ namespace saleAndBillingSystem
 
                     MessageBox.Show("Role from database: " + role);
 
-                    if (role.Trim().Equals("Admin", StringComparison.OrdinalIgnoreCase))
+                    if (role.Trim().Equals("Admin", StringComparison.OrdinalIgnoreCase) || role.Trim().Equals("Cashier", StringComparison.OrdinalIgnoreCase))
                     {
-                        AdminForm admin = new AdminForm();
-                        admin.FormClosed += (s, args) => this.Show();
-                        admin.Show();
+                        if (role.Trim().Equals("Cashier", StringComparison.OrdinalIgnoreCase))
+                        {
+                            LoggedInCashier = txtUsername.Text;
+                        }
+
+                        Form mainForm = FormFactory.CreateMainForm(role, this);
+                        mainForm.FormClosed += (s, args) => this.Show();
+                        mainForm.Show();
                         this.Hide();
-                    }
-                    else if (role.Trim().Equals("Cashier", StringComparison.OrdinalIgnoreCase))
-                    {
-                        LoggedInCashier = txtUsername.Text;
-                        CashierForm cashier = new CashierForm(this);
-                        cashier.FormClosed += (s, args) => this.Show();
-                        cashier.Show();
-                        this.Hide();
+
+                        
                     }
                 }
                 else

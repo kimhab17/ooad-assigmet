@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -16,11 +16,11 @@ namespace saleAndBillingSystem
         public dashboard()
         {
             InitializeComponent();
-            LoadDashboardData();
         }
 
         private void DashboardForm_Load(object sender, EventArgs e)
         {
+            if (this.DesignMode) return;
             LoadDashboardData();
         }
 

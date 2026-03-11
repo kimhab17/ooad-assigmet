@@ -68,7 +68,12 @@
     <Compile Include="categories.Designer.cs">
       <DependentUpon>categories.cs</DependentUpon>
     </Compile>
+    <Compile Include="CategoryRepository.cs" />
     <Compile Include="Class1.cs" />
+    <Compile Include="DatabaseManager.cs" />
+    <Compile Include="EventAggregator.cs" />
+    <Compile Include="FormFactory.cs" />
+    <Compile Include="IDiscountStrategy.cs" />
     <Compile Include="dashboard.cs">
       <SubType>UserControl</SubType>
     </Compile>

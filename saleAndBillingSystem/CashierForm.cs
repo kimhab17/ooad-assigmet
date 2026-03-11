@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -18,12 +18,14 @@ namespace saleAndBillingSystem
         private int lastSaleId = 0;  // to remember the latest sale ID
         private PrintDocument printDocument1 = new PrintDocument();
         private PrintPreviewDialog printPreviewDialog1 = new PrintPreviewDialog();
+        private IDiscountStrategy _discountStrategy; // Strategy Pattern
+
         public CashierForm(loginForm loginForm)
         {
             InitializeComponent();
-            LoadProducts();
             this.Load += CashierForm_Load;
             cashierName = loginForm.LoggedInCashier;
+            _discountStrategy = new NoDiscountStrategy(); // Default strategy
         }
 
         private void LoadProducts()
@@ -43,6 +45,9 @@ namespace saleAndBillingSystem
 
         private void CashierForm_Load(object sender, EventArgs e)
         {
+            if (this.DesignMode) return;
+            LoadProducts();
+            
             // បើមាន Columns ចាស់ទេ ទើបចាប់ផ្តើមបន្ថែម
             dgvCart.Columns.Clear();
 
@@ -102,6 +107,10 @@ namespace saleAndBillingSystem
                 }
             }
 
+            // Strategy pattern applied
+            decimal discount = _discountStrategy.CalculateDiscount(grandTotal);
+            grandTotal -= discount;
+
             // បង្ហាញនៅ lblTotal
             lblTotal.Text = "Total: $" + grandTotal.ToString("0.00");
         }
@@ -119,6 +128,10 @@ namespace saleAndBillingSystem
                     grandTotal += Convert.ToDecimal(row.Cells["SubTotal"].Value);
                 }
             }
+
+            // Apply Strategy Pattern Discount
+            decimal discount = _discountStrategy.CalculateDiscount(grandTotal);
+            grandTotal -= discount;
 
             // ឈ្មោះអ្នកគិតលុយ (អ្នកអាចយកពី LoginForm)
             //string cashierName = "Cashier1"; // ប្តូរជាឈ្មោះអ្នកបាន login
@@ -169,6 +182,10 @@ namespace saleAndBillingSystem
             }
 
             MessageBox.Show("✅ ការលក់បានបញ្ចប់ដោយជោគជ័យ!", "ជោគជ័យ", MessageBoxButtons.OK, MessageBoxIcon.Information);
+            
+            // Observer Pattern: Notify subscribers that a sale was made
+            EventAggregator.Instance.PublishSaleMade();
+
             dgvCart.Rows.Clear();
             lblTotal.Text = "Total: $0.00";
         }

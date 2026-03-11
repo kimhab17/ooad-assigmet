@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 using System.Data;
 using System.Data.SqlClient;
 using System.Windows.Forms;
@@ -14,11 +14,28 @@ namespace saleAndBillingSystem
             this.Load += Sale_Load; // ✅ ensure Load event fires
             btnFilter.Click += btnFilter_Click; // ✅ attach button event
             dgvSales.CellClick += dgvSales_CellClick; // ✅ attach grid click event
+
+            // Observer Pattern: Subscribe to SaleMade event
+            EventAggregator.Instance.OnSaleMade += (s, args) => 
+            {
+                // Ensure thread safety if called from background thread
+                if (this.InvokeRequired)
+                {
+                    this.Invoke(new MethodInvoker(LoadSales));
+                }
+                else
+                {
+                    LoadSales();
+                    CalculateTotalSales();
+                }
+            };
         }
 
         // ✅ Load event handler
         private void Sale_Load(object sender, EventArgs e)
         {
+            if (this.DesignMode) return;
+            
             // Set default filter dates to today
             dtFrom.Value = DateTime.Today;
             dtTo.Value = DateTime.Today;
